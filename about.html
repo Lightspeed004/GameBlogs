@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Background Image Effect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 93vh; /* Set a height to demonstrate scrolling */
+            overflow-x: hidden; /* Hide horizontal overflow */
+        }
+
+        .background-1 {
+            background-image: url('B.webp');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin-top: 50vh; /* Adjust to center content vertically */
+        }
+        #Q{
+            font-family: "Pacifico";
+        }
+
+        /* Adjust content styles as needed */
+        h1 {
+            font-size: 3rem;
+            color: rgb(255, 255, 255);
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+        .red-rectangle {
+        width: 100%; /* Width equal to the width of the screen */
+        height: 120px; /* Height of the red background */
+        background-color: rgb(0, 0, 112); /* Black background color */
+        position: absolute;
+        z-index: 1; /* Ensure it's behind the button */
+    }
+    .red-rectanglev {
+        width: 70px; /* Width equal to the width of the screen */
+        height: 100%; /* Height of the red background */
+        background-color: rgb(0, 0, 112); /* Black background color */
+        position: relative;
+        z-index: 1; /* Ensure it's behind the button */
+    }
+    .C2{
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .Button2 {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin: 20px;
+        width: 120px;
+        height: 80px;
+        font-size: 30px;
+        background-color: rgb(60, 0, 165);
+        border-radius: 25px;
+        border: 0px;
+        color: white;
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .Button1 {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin: 20px;
+        width: 120px;
+        height: 80px;
+        font-size: 30px;
+        margin-left: 60px;
+        background-color: rgb(0, 0, 112);
+        border-radius: 10px;
+        border: 0px;
+        color: white;
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .Button3 {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin: 20px;
+        width: 120px;
+        height: 80px;
+        font-size: 30px;
+        background-color: rgb(0, 0, 112);
+        border-radius: 10px;
+        border: 0px;
+        color: white;
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .Rec {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin: 40px;
+        width: 200px;
+        font-size: 60px;
+        font-family: "Baskervville SC";
+        border-radius: 25px;
+        background-color: #2600ff;
+        padding-left: 20px;
+        color: rgb(255, 247, 171);
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .PQMO {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin-left: 90px;
+        display: flex;
+        align-items: flex-start;
+        font-size: 30px;
+        font-style:oblique;
+        color: rgb(0, 0, 192);
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .container {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin-top: 20px;
+        width: 1400px;
+        height: 200px;
+        font-size: 28px;
+    }
+    .Im {
+        position: absolute; /* Relative positioning to stay within the flow */
+        margin-top: 30px;
+        margin-left: 800px;
+        width: 650px;
+        height: 495px;
+        font-size: 60px;
+        color: rgb(164, 6, 255);
+        z-index: 3; /* Ensure it's above the red-rectangle */
+    }
+    .Lat{
+        width: 850px;
+        font-size: 60px;
+        margin-left: 50px;
+        font-family: "Baskervville SC";
+        border-radius: 25px;
+        padding-left: 20px;
+        color: #2200e6
+    }
+    .new{
+        position: relative; /* Relative positioning to stay within the flow */
+        margin-top: 50px;
+        margin-left: 90px;
+        display: flex;
+        width: 1400px;
+        align-items: flex-start;
+        font-size: 30px;
+        font-style:oblique;
+        color: rgb(0, 0, 192);
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .rights {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin-top: 20px;
+        margin-left: 400px;
+        font-size: 30px;
+        background-color: rgb(60, 0, 165);
+        border-radius: 25px;
+        border: 0px;
+        color: white;
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .red-rectangle2 {
+        width: 100%; /* Width equal to the width of the screen */
+        height: 102px; /* Height of the red background */
+        background-color: rgb(0, 0, 112); /* Black background color */
+        position: absolute;
+        z-index: 1; /* Ensure it's behind the button */
+    }
+    </style>
+</head>
+<body>
+    <div class="background-1"></div>
+    <div class="content">
+        <h1 id="Q">Welcome to GameBlogs</h1>
+        <p>About</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div class="red-rectangle"></div>
+        <a href="index.html"><button class="Button1">
+            Home<br>
+        </button></a>
+        <a href="about.html"><button class="Button2">
+            About<br>
+        </button></a>
+        <a href="contact.html"><button class="Button3">
+            Contact<br>
+        </button></a>
+    <div class="C2">
+        <div class="red-rectanglev"></div>
+    <div>
+        <div class="Rec">About</div>
+        <br>
+        <div class="PQMO">
+            <div class="container">Welcome to GameBlogs, your ultimate destination for everything related to the exciting world of video games! We are a community of passionate gamers dedicated to providing you with the latest news, reviews, previews, and insights on your favorite titles and upcoming releases and also sharing our opinion along the way. There aren't a lot of blogging sites about gaming and we hope to fill up that game with this website, slowly but surely. Have fun reading!
+
+                Whether you're a seasoned veteran or a casual player just starting out, GamingBlogs is your one-stop shop for all things gaming. Here's what you can expect from us:</div>
+        </div>
+        <ul style="margin-left: 100px; font-size: 28px; color: rgb(0, 0, 192);">
+            <li>Indepth coverage: Our team of passionate gamers dives deep into the games you love, 
+                providing comprehensive reviews, analyses, and strategies to help you conquer any challenge 
+                or atleast thats our eventual goal</li>.
+            <li>Unbiased opinions: We strive to bring you honest and objective opinions on new releases,
+                upcoming titles, and gaming trends.</li>.
+            <li>
+                A thriving community: Join the conversation! We encourage our readers to share their thoughts,
+                experiences, and recommendations in our comments section.
+            </li>
+        </ul>
+        <br><br><br>
+        <div class="red-rectangle2"></div>
+        <button class="rights">
+            @2024 MADE BY KHATRI. ALL RIGHTS RESERVED<br>
+        </button>
+    </div>
+    <!-- Additional content goes here -->
+</body>
+</html>

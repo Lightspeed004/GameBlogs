@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameBlogs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 200vh; /* Set a height to demonstrate scrolling */
+            overflow-x: hidden; /* Hide horizontal overflow */
+        }
+
+        .background-1 {
+            background-image: url('B.webp');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin-top: 50vh; /* Adjust to center content vertically */
+        }
+        #Q{
+            font-family: "Pacifico";
+        }
+
+        /* Adjust content styles as needed */
+        h1 {
+            font-size: 3rem;
+            color: rgb(255, 255, 255);
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+        .red-rectangle {
+        width: 100%; /* Width equal to the width of the screen */
+        height: 120px; /* Height of the red background */
+        background-color: rgb(0, 0, 112); /* Black background color */
+        position: absolute;
+        z-index: 1; /* Ensure it's behind the button */
+    }
+    .red-rectanglev {
+        width: 70px; /* Width equal to the width of the screen */
+        height: 100%; /* Height of the red background */
+        background-color: rgb(0, 0, 112); /* Black background color */
+        position: relative;
+        z-index: 1; /* Ensure it's behind the button */
+    }
+    .C2{
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .Button1 {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin: 20px;
+        margin-left: 60px;
+        width: 120px;
+        height: 80px;
+        font-size: 30px;
+        background-color: rgb(60, 0, 165);
+        border-radius: 25px;
+        border: 0px;
+        color: white;
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .Button2 {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin: 20px;
+        width: 120px;
+        height: 80px;
+        font-size: 30px;
+        background-color: rgb(0, 0, 112);
+        border-radius: 10px;
+        border: 0px;
+        color: white;
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .Button3 {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin-top: 20px;
+        margin-left: 1000px;
+        width: 120px;
+        height: 80px;
+        font-size: 30px;
+        background-color: rgb(0, 0, 112);
+        border-radius: 10px;
+        border: 0px;
+        color: white;
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .Rec {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin: 40px;
+        width: 850px;
+        font-size: 60px;
+        font-family: "Baskervville SC";
+        border-radius: 25px;
+        background-color: #2600ff;
+        padding-left: 20px;
+        color: rgb(255, 247, 171);
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .PQMO {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin-left: 90px;
+        display: flex;
+        align-items: flex-start;
+        font-size: 30px;
+        font-style:oblique;
+        color: rgb(0, 0, 192);
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .container {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin-top: 20px;
+        width: 700px;
+        height: 600px;
+        font-size: 24px;
+    }
+    .Im {
+        position: absolute; /* Relative positioning to stay within the flow */
+        margin-top: 30px;
+        margin-left: 800px;
+        width: 650px;
+        height: 495px;
+        font-size: 60px;
+        color: rgb(164, 6, 255);
+        z-index: 3; /* Ensure it's above the red-rectangle */
+    }
+    .Lat{
+        width: 850px;
+        font-size: 60px;
+        margin-left: 50px;
+        font-family: "Baskervville SC";
+        border-radius: 25px;
+        padding-left: 20px;
+        color: #2200e6
+    }
+    .new{
+        position: relative; /* Relative positioning to stay within the flow */
+        margin-top: 50px;
+        margin-left: 90px;
+        display: flex;
+        width: 1400px;
+        align-items: flex-start;
+        font-size: 30px;
+        font-style:oblique;
+        color: rgb(0, 0, 192);
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    .rights {
+        position: relative; /* Relative positioning to stay within the flow */
+        margin: 20px;
+        margin-left: 400px;
+        font-size: 30px;
+        background-color: rgb(60, 0, 165);
+        border-radius: 25px;
+        border: 0px;
+        color: white;
+        z-index: 2; /* Ensure it's above the red-rectangle */
+    }
+    </style>
+</head>
+<body>
+    <div class="background-1"></div>
+    <div class="content">
+        <h1 id="Q">Welcome to GameBlogs</h1>
+        <p>Scroll down to read Blogs written by Gamers.</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div class="red-rectangle"></div>
+        <a href="index.html"><button class="Button1">
+            Home<br>
+        </button></a>
+        <a href="about.html"><button class="Button2">
+            About<br>
+        </button></a>
+        <a href="contact.html"><button class="Button2">
+            Contact<br>
+        </button></a>
+        <button class="Button3">
+            Admin
+        </button>
+    <div class="C2">
+        <div class="red-rectanglev"></div>
+    <div>
+        <div class="Rec">Recommendation of the Week</div>
+        <br>
+        <div class="PQMO">
+            <div class="container">Let's talk about the newest DLC from the infamous company known for introducing the souls genre to the world, FromSoftware, and let me tell you, they've outdone themselves. Shadow of the Erdtree for Elden Ring isn't just good, it's a masterclass in expansion design.
+
+            Imagine everything you loved about Elden Ring – the brutal combat, the cryptic lore begging to be unraveled, the breathtaking world design – condensed into a perfectly formed, incredibly tight package. Shadow of the Erdtree feels like a whole new game in itself, boasting a vast new map brimming with secrets to uncover.
+            
+            We're talking a staggering amount of new content: 70 weapons to add to your arsenal, a staggering number of spells and incantations to master, and enough armor sets to outfit a small army. FromSoftware hasn't just increased the quantity though, the quality is phenomenal. Each new addition feels unique and exciting to use, perfectly complementing the established gameplay of Elden Ring.
+            
+            The average player would spend about 50 hours before the credits start rolling, this is actually longer than many full priced games, although this DLC isn't particularly cheap either. FromSoft has once again delivered a masterpiece</div>
+        <img src="ERsote.jpg" class="Im">
+        </div>
+        <div class="Lat">Latest Post (08/07/24)</div>
+        <div class="new">
+            Hey gamers! I mostly wanted to talk about upcoming games this year, haven't done one of these for a while. 2024 still some awesome titles still on the way to quench your gaming thirst. Whether you're into action, exploration, or revisiting old favorites, there's something for everyone. Let's take a peek at a few upcoming games to add to your radar! First and foremost we've got 
+            Black Myth: Wukong coming to PC, PS5, Xbox Series X/S, people are expecting to seeintense combat, breathtaking environments, and a rich story steeped in Chinese mythology following  the classic tale of the Monkey King.
+            The Legend of Zelda: Echoes of Wisdom (Switch): I still don't have a switch :(, but needless to say the expectations of fans are higher than ever before after playing through the masterpiece that was tears of the Kingdom and wait is almost over for Zelda as well.
+            Assassin's Creed Shadows (Multiple Platforms - Release Date TBA): Rumors swirl about the next Assassin's Creed installment, with whispers of a return to a fan-favorite setting. Let's see what twists Ubisoft brings with this one.
+            Warhammer 40,000 coming to PC, Xbox Series X/S: The iconic Space Marines return in this action-packed sequel. Expect brutal combat, over-the-top carnage, and an epic story set in the grim darkness of the far future.
+            Call of Duty Black Ops 6: Yup, they're making another one, what I like about this one is that their sticking to a campaign a full fledged campaign unlike some previous entries, we've heard of some movement enhancements as well, which might stir up multiplayer a bit as well.
+            Star Wars Outlaws coming to PS5, Xbox Series X/S, PC: This is the next big star wars game. Its going to be an open world game this time around.Fans are looking forward to the exploration, npc questlines and the combat as well. It'll be interesting to see how they implement multiple planets within their open world. Im not necessarily a huge fan of these games but must I say this one has indeed piqued me.
+            Grand theft Auto 6: Ok so this isn't exactly coming in 2024 but this might actually be the most anticipated game of the decade so I thought to mention it here as well. 
+        </div>
+        <br><br><br><br><br>
+        <div class="red-rectangle"></div>
+        <button class="rights">
+            @2024 MADE BY KHATRI. ALL RIGHTS RESERVED<br>
+        </button>
+    </div>
+    <!-- Additional content goes here -->
+</body>
+</html>

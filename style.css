@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 200vh; /* Set a height to demonstrate scrolling */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.background-1 {
+    background-image: url('Cool4.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: transform 1s ease; /* Smooth transition for transform property */
+}
+.content {
+    position: relative;
+    z-index: 3;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50vh; /* Adjust to center content vertically */
+}
+
+/* Adjust content styles as needed */
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* Class to trigger background change on scroll */
+.scroll-trigger {
+    transform: translateY(-100%);
+}
